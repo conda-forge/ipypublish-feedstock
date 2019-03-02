@@ -41,7 +41,7 @@ requirements:
     - six
     - sphinx >=1.6
     - sphinxcontrib-bibtex
-    - tornado
+    - tornado <6
     - traitlets
     - typing
 
