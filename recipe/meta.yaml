@@ -39,28 +39,33 @@ requirements:
     - setuptools
     - shutilwhich
     - six
-    - sphinx >=1.6
+    - sphinx >=1.6,<2
     - sphinxcontrib-bibtex
-    - tornado <6
+    - texsoup <0.2
+    - tornado
     - traitlets
     - typing
 
 test:
   imports:
     - ipypublish
+    - ipypublish.bib2glossary
     - ipypublish.convert
     - ipypublish.export_plugins
     - ipypublish.filters
     - ipypublish.filters_pandoc
     - ipypublish.filters_pandoc.tests
     - ipypublish.frontend
-    - ipypublish.ipysphinx
-    - ipypublish.ipysphinx.css
     - ipypublish.port_api
     - ipypublish.postprocessors
     - ipypublish.preprocessors
     - ipypublish.schema
     - ipypublish.scripts
+    - ipypublish.sphinx
+    - ipypublish.sphinx.gls
+    - ipypublish.sphinx.notebook
+    - ipypublish.sphinx.notebook.css
+    - ipypublish.sphinx.tests
     - ipypublish.templates
     - ipypublish.templates.outline_schemas
     - ipypublish.templates.segments
