@@ -1,5 +1,5 @@
 {% set name = "ipypublish" %}
-{% set version = "0.9.3" %}
+{% set version = "0.10.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3e1605c8462e8eb1e5066df7f55abc6e69b7694fd802e30273b3aa8976214887
+  sha256: 4ae1982897f004bb50efd9b6586ec6671df62d295ebf8080a7e42f14934a83ef
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - nbpublish = ipypublish.frontend.nbpublish:run
@@ -39,28 +39,33 @@ requirements:
     - setuptools
     - shutilwhich
     - six
-    - sphinx >=1.6
+    - sphinx >=1.6,<2
     - sphinxcontrib-bibtex
-    - tornado <6
+    - texsoup <0.2
+    - tornado
     - traitlets
     - typing
 
 test:
   imports:
     - ipypublish
+    - ipypublish.bib2glossary
     - ipypublish.convert
     - ipypublish.export_plugins
     - ipypublish.filters
     - ipypublish.filters_pandoc
     - ipypublish.filters_pandoc.tests
     - ipypublish.frontend
-    - ipypublish.ipysphinx
-    - ipypublish.ipysphinx.css
     - ipypublish.port_api
     - ipypublish.postprocessors
     - ipypublish.preprocessors
     - ipypublish.schema
     - ipypublish.scripts
+    - ipypublish.sphinx
+    - ipypublish.sphinx.gls
+    - ipypublish.sphinx.notebook
+    - ipypublish.sphinx.notebook.css
+    - ipypublish.sphinx.tests
     - ipypublish.templates
     - ipypublish.templates.outline_schemas
     - ipypublish.templates.segments

@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About ipypublish
 ================
 
@@ -18,8 +14,17 @@ Summary: A workflow for creating and editing publication ready scientific report
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ipypublish-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ipypublish-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6304&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ipypublish-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
