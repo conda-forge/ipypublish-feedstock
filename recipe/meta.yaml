@@ -31,20 +31,21 @@ requirements:
     - jupytext
     - nbconvert
     - nbformat
+    - ordered-set
     - pandoc
     - panflute
-    - pathlib2
+    - pathlib2;   # [ py < 34 ]
     - python
     - ruamel.yaml
     - setuptools
-    - shutilwhich
+    - shutilwhich;   # [ py < 33 ]
     - six
     - sphinx >=1.6,<2
     - sphinxcontrib-bibtex
     - texsoup <0.2
     - tornado
     - traitlets
-    - typing
+    - typing;   # [ py < 35 ]
 
 test:
   imports:
