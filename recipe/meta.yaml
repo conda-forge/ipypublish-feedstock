@@ -10,7 +10,8 @@ source:
   sha256: eb68280221db5d2afb2ea73e0cca9f8ac6dbfb2e08d81109e6944f0a1ae66afa
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   entry_points:
     - nbpublish = ipypublish.frontend.nbpublish:run
     - nbpresent = ipypublish.frontend.nbpresent:run
@@ -33,18 +34,18 @@ requirements:
     - ordered-set
     - pandoc
     - panflute
-    - pathlib2   # [ py < 34 ]
+    - pathlib2
     - python
     - ruamel.yaml
     - setuptools
-    - shutilwhich   # [ py < 33 ]
+    - shutilwhich
     - six
     - sphinx >=1.6,<2
     - sphinxcontrib-bibtex
     - texsoup <0.2
     - tornado
     - traitlets
-    - typing   # [ py < 35 ]
+    - typing
 
 test:
   imports:
