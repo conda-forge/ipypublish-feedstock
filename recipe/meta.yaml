@@ -33,18 +33,18 @@ requirements:
     - ordered-set
     - pandoc
     - panflute
-    - pathlib2;   # [ py < 34 ]
+    - pathlib2   # [ py < 34 ]
     - python
     - ruamel.yaml
     - setuptools
-    - shutilwhich;   # [ py < 33 ]
+    - shutilwhich   # [ py < 33 ]
     - six
     - sphinx >=1.6,<2
     - sphinxcontrib-bibtex
     - texsoup <0.2
     - tornado
     - traitlets
-    - typing;   # [ py < 35 ]
+    - typing   # [ py < 35 ]
 
 test:
   imports:
