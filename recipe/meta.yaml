@@ -23,7 +23,8 @@ requirements:
     - python
   run:
     - bibtexparser
-    - docutils
+    - docutils  # [py>27]
+    - docutils <0.15  # [py<=27]
     - jinja2
     - jsonextended >=0.7
     - jsonschema
@@ -39,7 +40,7 @@ requirements:
     - setuptools
     - shutilwhich  # [py<33]
     - six
-    - sphinx >=1.6,<2
+    - sphinx >=1.6
     - sphinxcontrib-bibtex
     - texsoup <0.2
     - tornado
