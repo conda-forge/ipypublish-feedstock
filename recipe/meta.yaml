@@ -1,5 +1,5 @@
 {% set name = "ipypublish" %}
-{% set version = "0.10.6" %}
+{% set version = "0.10.7" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c50bfea7c4ecfaf706f4465a63de6e65c2baeefe5c3e7276928cf41a703471bc
+  sha256: 7dd2c8ea037e45ac2097c9a25bb0ff663b2c60983d080eeec60ee6b96be5058b
 
 build:
   number: 0
