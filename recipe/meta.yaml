@@ -10,7 +10,7 @@ source:
   sha256: 79bcdbf504367dbd6c8bdb94d35b539b00a25bf4669f352c375b21214470e77a
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - nbpublish = ipypublish.frontend.nbpublish:run
     - nbpresent = ipypublish.frontend.nbpresent:run
@@ -36,7 +36,7 @@ requirements:
     - panflute
     - pathlib2  # [py<34]
     - python
-    - ruamel.yaml
+    - ruamel.yaml <0.16  # TODO this can be unpinned when ruamel.yaml.clib is available
     - setuptools
     - shutilwhich  # [py<33]
     - six
