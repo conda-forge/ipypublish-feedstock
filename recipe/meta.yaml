@@ -1,5 +1,5 @@
 {% set name = "ipypublish" %}
-{% set version = "0.10.9" %}
+{% set version = "0.10.10" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2cc5be7c41df05a4f11dd99f479dafaaadabdcb55c32739482deff261134708e
+  sha256: 21bd25f2e6ae66cef42ee78610f0ef9a09ca1efeb8bfcf35aa5042cc23a35e8d
 
 build:
   number: 0
@@ -41,7 +41,7 @@ requirements:
     - setuptools
     - shutilwhich  # [py<33]
     - six
-    - sphinx >=1.6
+    - sphinx >=1.8
     - sphinxcontrib-bibtex
     - texsoup <0.2
     - tornado
