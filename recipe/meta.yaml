@@ -10,7 +10,7 @@ source:
   sha256: 21bd25f2e6ae66cef42ee78610f0ef9a09ca1efeb8bfcf35aa5042cc23a35e8d
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - nbpublish = ipypublish.frontend.nbpublish:run
     - nbpresent = ipypublish.frontend.nbpresent:run
