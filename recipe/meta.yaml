@@ -1,21 +1,21 @@
 {% set name = "ipypublish" %}
-{% set version = "0.10.10" %}
+{% set version = "0.10.11" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 21bd25f2e6ae66cef42ee78610f0ef9a09ca1efeb8bfcf35aa5042cc23a35e8d
+  sha256: 04fac5dcf76691611ebf1dbe73cf04eed7e5963672ac4d92ba3bf19c3f75c294
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - nbpublish = ipypublish.frontend.nbpublish:run
     - nbpresent = ipypublish.frontend.nbpresent:run
     - ipubpandoc = ipypublish.filters_pandoc.main:pandoc_filters
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
