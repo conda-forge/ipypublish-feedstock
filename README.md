@@ -5,7 +5,7 @@ Home: https://github.com/chrisjsewell/ipypublish
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A workflow for creating and editing publication ready scientific reports, from one or more Jupyter Notebooks
 
