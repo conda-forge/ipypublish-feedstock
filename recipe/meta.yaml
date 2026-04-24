@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 01c094d57bfee349b44f32922b9f843b36e137955f2a852507a5c04479af39e9
 
 build:
-  number: 2
+  number: 3
   entry_points:
     - nbpublish = ipypublish.frontend.nbpublish:run
     - nbpresent = ipypublish.frontend.nbpresent:run
